@@ -1,30 +1,20 @@
 # Study materials
 
-This directory is reserved for the materials needed to understand and reproduce the experimental tasks.
+This directory documents the experimental materials used in the manuscript.
 
-The final release should include, where permitted:
+The study materials cover the consumer-complaint and workplace-grievance tasks, writer and evaluator instructions, baseline tasks, provenance conditions, measure wording, scoring rules, and assignment procedures described in the manuscript and Supplementary Information.
 
-- canonical consumer-complaint stimulus;
-- canonical workplace-grievance stimulus;
-- baseline information-discrimination task;
-- writer instructions;
-- evaluator instructions;
-- provenance scripts for Studies 2–4;
-- consent / comprehension items that can be publicly shared;
-- measure wording and scoring rules;
-- randomization and assignment documentation;
-- a machine-readable mapping between material files and study conditions.
+## Provenance conditions
 
-## Provenance conditions documented in the manuscript
-
-Study 2 compares no displayed provenance with the truthful statement:
+Study 2 compares no displayed provenance field with the truthful statement:
 
 > A generative AI tool assisted with wording and organization.
 
 Study 4 compares:
+
 - generic disclosure;
 - neutral matched disclosure;
-- a human-control/responsibility attestation package;
+- a human-control/responsibility attestation package; and
 - staged review.
 
-The released materials should use the exact experimental wording from the final study records rather than reconstructed wording.
+The experimental wording and intervention constraints are reported in the manuscript and Supplementary Information. The AI writing system instruction is provided in `../prompts/system_prompt.txt`.
