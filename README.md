@@ -17,38 +17,19 @@ The full program contains 24,000 participant entry records and 23,040 analyzed p
 
 The experiments use English-language consumer-complaint and workplace-grievance tasks in the United States and United Kingdom. Experimental outcomes are research-task decisions and should not be interpreted as actual refunds, employment actions, grievance resolutions, or claimant welfare.
 
-## Repository contents
+## Reproducibility scope
 
-The intended release structure is:
+The reproducibility package is organized around the following analyses:
 
-```text
-.
-├── README.md
-├── data/
-│   └── README.md
-├── code/
-│   └── README.md
-├── materials/
-│   └── README.md
-└── prompts/
-    └── system_prompt.txt
-```
+1. Participant-flow accounting and study-specific analysis samples.
+2. Construction of pre-treatment baseline advocacy-capacity variables and observed quality measures.
+3. Study 1 writer-level models and capacity-gap contrasts.
+4. Study 2 fixed-content provenance contrasts for support and approval.
+5. Study 3 working logistic model, marginal approval probabilities, net outcome equalization, gap-level conversion loss, and covariance / graph-sensitivity analyses.
+6. Study 4 generic-referenced support contrasts and descriptive secondary outcomes.
+7. Figure-source data and supplementary-table results.
 
-After the final reproducibility package is deposited, the repository should additionally contain de-identified analysis datasets, executable analysis scripts, figure-source data, and machine-readable study materials. The file-level manifest should be updated at that time.
-
-## Reproducibility workflow
-
-The final executable package should permit a reader to reproduce the reported analyses in the following order:
-
-1. Validate participant-flow counts and construct the study-specific analysis samples.
-2. Construct pre-treatment baseline advocacy-capacity variables and the observed quality measures.
-3. Reproduce Study 1 writer-level models and capacity-gap contrasts.
-4. Reproduce Study 2 fixed-content provenance contrasts for support and approval.
-5. Reproduce Study 3 working logistic model, marginal approval probabilities, net outcome equalization, gap-level conversion loss, and covariance / graph-sensitivity analyses.
-6. Reproduce Study 4 generic-referenced support contrasts and descriptive secondary outcomes.
-7. Rebuild the figure-source datasets and reproduce the manuscript figures and supplementary tables.
-
-## Analysis principles reflected in the manuscript
+## Analysis principles
 
 - AI assignment is defined by randomized **access** to the study interface, not by post-assignment uptake of model suggestions.
 - Baseline advocacy capacity is measured from objectively scored pre-treatment sources; self-efficacy and structural-position variables are kept separate.
@@ -59,18 +40,14 @@ The final executable package should permit a reader to reproduce the reported an
 
 ## AI-assisted writing intervention
 
-The AI-assisted interface was constrained to factual institutional self-advocacy. The complete system instruction is provided in `prompts/system_prompt.txt`.
+The AI-assisted writing condition used OpenAI GPT-4.1 mini, model snapshot `gpt-4.1-mini-2025-04-14`, accessed through the OpenAI API from 15 January to 18 March 2026. Generation parameters were fixed at temperature = 0.20, top_p = 1.00, maximum output tokens = 450, frequency penalty = 0, and presence penalty = 0.
 
-The study interface allowed up to four user turns and imposed a 450-token limit per model reply. It provided no browsing, external retrieval, hidden participant profile, or researcher-supplied biography. The final release should additionally document the exact provider, model identifier / snapshot, API or interface version, collection dates, and generation parameters from the original experiment logs.
+The study interface allowed up to four user turns and imposed a 450-token limit per model reply. It provided no web browsing, external retrieval, hidden participant profile, persistent conversational memory, or researcher-supplied biography. The complete system instruction is provided in `prompts/system_prompt.txt`.
 
 ## Data protection
 
-Only de-identified analysis data should be released publicly. Direct identifiers, platform account identifiers, free-text fields that could reveal participant identity, and other information restricted by consent or ethics requirements should not be deposited. If any analysis variable cannot be publicly released, the repository should document the restriction and provide an appropriate access procedure or a reproducibility-safe derived dataset.
+Publicly shared analysis files are de-identified. Direct identifiers, platform account identifiers, disclosive free-text fields, and other information restricted by consent or ethics requirements are not included.
 
 ## Citation
 
-Please cite the associated manuscript and the archived repository release. A DOI from an archival service such as Zenodo is recommended for the version of record because a GitHub branch can change over time.
-
-## Repository status
-
-This repository currently contains the documentation scaffold and the study-system prompt. Before the manuscript's final public data-and-code availability statement is used, the de-identified analysis data, executable analysis scripts, figure-source data, and final configuration metadata should be deposited and checked against the manuscript and Supplementary Information.
+Please cite the associated manuscript and the archived repository release when using these materials.
