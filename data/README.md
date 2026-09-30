@@ -1,27 +1,18 @@
-# Data release
+# Data
 
-This directory is reserved for the de-identified analysis datasets and figure-source data associated with the manuscript.
+This directory is used for de-identified analysis datasets and figure-source data associated with the manuscript.
 
-## Recommended final files
+## Analysis units
 
-- `study1_writers.csv` — retained Study 1 writer records.
-- `study2_evaluators.csv` — retained Study 2 evaluator records.
-- `study3_writers.csv` — retained Study 3 writer/message records.
-- `study3_evaluations.csv` — Study 3 evaluator-message decision records.
-- `study4_evaluators.csv` — retained Study 4 evaluator records.
-- `figure_source_data/` — compact source tables used to construct manuscript figures.
-- `codebook.csv` — variable names, labels, units, coding, missing-value conventions, and analysis roles.
+The manuscript reports the following analyzed records:
 
-The released data should preserve the analysis units and treatment indicators used in the manuscript while removing direct or indirect identifiers not needed to reproduce the reported analyses.
+- Study 1: 4,608 writers.
+- Study 2: 3,456 evaluators.
+- Study 3: 3,456 writers and 6,912 evaluators, yielding 27,648 evaluator-message decisions.
+- Study 4: 4,608 evaluators.
 
-## Required checks before public release
+Treatment labels, country/context indicators, reporting-point variables, outcome units, and participant-flow counts follow the manuscript and Supplementary Information.
 
-1. Participant-flow counts reproduce Supplementary Table S1.
-2. Study 1 retains 4,608 analyzed writers.
-3. Study 2 retains 3,456 analyzed evaluators.
-4. Study 3 retains 3,456 writers, 6,912 evaluators, and 27,648 evaluator-message decisions.
-5. Study 4 retains 4,608 analyzed evaluators.
-6. Treatment labels, country/context indicators, reporting-point variables, and outcome units match the manuscript.
-7. No direct identifiers or disclosive free-text fields are included.
+## Data protection
 
-If consent or ethics restrictions prevent release of a raw field, provide the derived analysis variable used in the published models whenever possible and document the restriction here.
+Public analysis files exclude direct identifiers, platform account identifiers, disclosive free-text fields, and other information restricted by participant consent or ethics requirements. Derived analysis variables are used where necessary to support reproducibility without exposing identifying information.
